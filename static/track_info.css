@@ -1,0 +1,17 @@
+@media all and (min-width: 768px) and (max-width: 1024px){
+    .card1 {
+        width: 10vw;
+        font-size: 20px ;
+        margin: auto;
+    }
+}
+
+@media all and (min-width: 1024px){
+    .carousel-control-prev-icon{
+        margin-left: -10vw;
+    }
+
+    .carousel-control-next-icon{
+        margin-right: -10vw;
+    }
+}

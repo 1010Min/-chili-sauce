@@ -30,6 +30,7 @@
     <link rel="shortcut icon" href="../static/favicon.ico">
     <title>sookmyung-track</title>
     <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='track_info.css') }}">
     <style>
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
@@ -37,13 +38,26 @@
             width: 100px;
             background-size: 100%, 100%;
             background-image: none;
+
         }
+
+        @media all and (max-width: 1023px){
+            .carousel-control-prev-icon{
+                margin-left: -5%;
+            }
+
+            .carousel-control-next-icon{
+                margin-right: -5%;
+            }
+        }
+
 
         .carousel-control-next-icon:after
         {
             content: '>';
             font-size: 55px;
             color: #0d2f87;
+
         }
 
         .carousel-control-prev-icon:after {
@@ -53,7 +67,6 @@
         }
         .card-deck{
             margin: auto;
-            width: 80%;
             padding-left: 100px;
             padding-right: 100px;
         }
@@ -62,7 +75,7 @@
         }
         .title{
             color: #0d2f87;
-            font-size: 1.9rem;
+            font-size: 1.6rem;
             font-weight: bold;
             margin-bottom: 30px;
         }
@@ -103,24 +116,24 @@
     </div>
 </nav>
 <div class="main">
-    <h4 style="margin-top: 30px; margin-left: 30px">keyword in SMT</h4>
+    <h4 style="margin-top: 30px; margin-left: 30px; margin-bottom: 30px">keyword in SMT</h4>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="card-deck">
-                    <div class="card">
+                <div class="card-deck col-12 col-sm-12 col-md-12">
+                    <div class="card card1 w-75">
                         <div class="card-body">
                             <h5 class="card-title title">모듈</h5>
                             <p class="card-text text">공통된 주제의 교과목으로 구성된 집합체</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card1 w-75">
                         <div class="card-body">
                             <h5 class="card-title title">모듈허브(Hub)</h5>
                             <p class="card-text">각 학과의 교육과정을 기술이나 필요역량 단위로 묶은 모듈의 집합체</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card1 w-75">
                         <div class="card-body">
                             <h5 class="card-title title">트랙</h5>
                             <p class="card-text">학과별 전공교육과정을 기반으로 한 인재육성 교육 커리큘럼으로, 진출분야 및 역량강화 위한 모듈과 교과목으로 구성된 전공로드맵   </p>
@@ -130,13 +143,13 @@
             </div>
             <div class="carousel-item">
                 <div class="card-deck">
-                    <div class="card">
+                    <div class="card card1">
                         <div class="card-body">
                             <h5 class="card-title title">타학과 코드쉐어</h5>
                             <p class="card-text">타 학과 전공과목을 이수하고 해당 학과 전공학점으로 인정받을 수 있도록 연계한 학부 교과목</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card1">
                         <div class="card-body">
                             <h5 class="card-title title">대학원 연계과목</h5>
                             <p class="card-text">학부생이 석사과정의 전공과목을 이수하고 해당 학과 전공학점으로 인정받을 수 있도록 연계한 대학원 교과목</p>
