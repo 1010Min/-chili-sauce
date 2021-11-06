@@ -30,6 +30,20 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <title>sookmyung-track</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <style>
+        @media all and (max-width: 1024px){
+            .dropdown-toggle{
+                display: block;
+                margin-left: -30%;
+            }
+        }
+        @media all and (min-width: 1025px){
+            .dropdown-toggle{
+                display: block;
+                margin-left: -40%;
+            }
+        }
+    </style>
 </head>
 
 <body>
