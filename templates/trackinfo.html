@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <!-- google web font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- favicon   -->
+    <link rel="shortcut icon" href="../static/favicon.ico">
+    <title>sookmyung-track</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <style>
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            height: 100px;
+            width: 100px;
+            background-size: 100%, 100%;
+            background-image: none;
+        }
+
+        .carousel-control-next-icon:after
+        {
+            content: '>';
+            font-size: 55px;
+            color: #0d2f87;
+        }
+
+        .carousel-control-prev-icon:after {
+            content: '<';
+            font-size: 55px;
+            color: #0d2f87;
+        }
+        .card-deck{
+            margin: auto;
+            width: 80%;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .card{
+            box-shadow: 3px 3px 1px 3px lightgray;
+        }
+        .title{
+            color: #0d2f87;
+            font-size: 1.9rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .w-75{
+            margin: 40px auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<nav id="nav" class="navbar navbar-expand-lg navbar-dark navbar-default">
+    <a class="navbar-brand" href="./">
+        <img id="logo" src="../static/logo.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav active">
+            <li class="nav-item active">
+                <a class="nav-link" href="./track-info">트랙 소개 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./major-track">학과별 트랙</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./recommend">과목 트랙 추천</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="main">
+    <h4 style="margin-top: 30px; margin-left: 30px">keyword in SMT</h4>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title title">모듈</h5>
+                            <p class="card-text text">공통된 주제의 교과목으로 구성된 집합체</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title title">모듈허브(Hub)</h5>
+                            <p class="card-text">각 학과의 교육과정을 기술이나 필요역량 단위로 묶은 모듈의 집합체</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title title">트랙</h5>
+                            <p class="card-text">학과별 전공교육과정을 기반으로 한 인재육성 교육 커리큘럼으로, 진출분야 및 역량강화 위한 모듈과 교과목으로 구성된 전공로드맵   </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title title">타학과 코드쉐어</h5>
+                            <p class="card-text">타 학과 전공과목을 이수하고 해당 학과 전공학점으로 인정받을 수 있도록 연계한 학부 교과목</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title title">대학원 연계과목</h5>
+                            <p class="card-text">학부생이 석사과정의 전공과목을 이수하고 해당 학과 전공학점으로 인정받을 수 있도록 연계한 대학원 교과목</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="main">
+    <h4 style="margin-top: 50px; margin-left: 30px">Track INFO</h4>
+    <div class="card w-75">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+    </div>
+    <div class="card w-75">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+    </div>
+    <div class="card w-75">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+    </div>
+    <div class="card w-75">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    Copyright ⓒchilli sauce. All Rights Reserved.
+    <br>
+    <br>Contact : chlthr1222@sookmyung.ac.kr / sw18@sookmyung.ac.kr
+</div>
+</body>
+
+</html>
