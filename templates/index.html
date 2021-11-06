@@ -54,8 +54,36 @@
             </ul>
         </div>
     </nav>
+    <img id="main" src="{{ url_for('static', filename='main.png') }}" class="img-fluid" alt="Responsive image"
+    style="width: 100%">
 
-
+    <div class="row">
+        <div class="col">
+            <div id="first" class="card">
+                <div class="card-body">
+                    <p id="sm-inside"class="card-title">Sookmyung Inside</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <a href="https://portal.sookmyung.ac.kr/irj/portal" target="_blank" style="text-decoration:none">
+                <div id="second" class="card">
+                    <div class="card-body">
+                        <p class="card-title">숙명포털</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="https://www.sookmyung.ac.kr/sookmyungkr/index.do" target="_blank" style="text-decoration:none">
+                <div id="third" class="card">
+                    <div class="card-body">
+                        <p class="card-title">숙명 공식홈페이지</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 
     <div class="footer">
         Copyright ⓒchilli sauce. All Rights Reserved.

@@ -15,3 +15,195 @@
     text-align: center;
     background-color: lightgray;
 }
+
+.row{
+    padding: 100px;
+}
+
+#first{
+    background-color: #0d2f87;
+}
+
+#second{
+    border-color: #0d2f87;
+    color: #0d2f87;
+}
+
+#third{
+    border-color: #0d2f87;
+    color: #0d2f87;
+}
+
+.card{
+    text-align: center;
+    margin: 30px;
+    padding: 50px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    .card {
+        width: 80%;
+        font-size: 20px ;
+        margin: auto;
+        padding: 30px;
+    }
+    #first{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #second{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #third{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 360px) and (max-width: 374px){
+    .card{
+        width: 85%;
+        font-size: 12px ;
+        margin: auto;
+        padding: 10px;
+    }
+    #first{
+        margin-top: -50px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #second{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #third{
+        margin-top: 10px;
+        margin-bottom: -50px;
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 413px) {
+    .card{
+        width: 80%;
+        font-size: 12px ;
+        margin: auto;
+        padding: 10px;
+    }
+    #first{
+        margin-top: -50px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #second{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #third{
+        margin-top: 10px;
+        margin-bottom: -50px;
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 414px) and (max-width: 735px) {
+    .card{
+        width: 85%;
+        font-size: 15px ;
+        margin: 5px;
+        padding: 15px;
+    }
+    #first{
+        margin-top: -50px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #second{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #third{
+        margin-top: 10px;
+        margin-bottom: -50px;
+        width: 100%;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 359px){
+    .card{
+        width: 85%;
+        font-size: 12px ;
+        margin: auto;
+        padding: 3px;
+    }
+    #first{
+        margin-top: -50px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #second{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #third{
+        margin-top: 10px;
+        margin-bottom: -50px;
+        width: 100%;
+    }
+}
+/*fold*/
+@media all and (min-width: 279px) and (max-width: 280px){
+    .card{
+        width: 85%;
+        font-size: 11px ;
+        margin: auto;
+        padding: 2px;
+    }
+    #first{
+        margin-top: -50px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #second{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #third{
+        margin-top: 10px;
+        margin-bottom: -50px;
+        width: 100%;
+    }
+}
+
+
+#sm-inside{
+    color: white;
+}
+
+row{
+    margin: auto;
+}
+
+a{
+    text-decoration-line: none;
+}
