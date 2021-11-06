@@ -40,13 +40,13 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">트랙 소개 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./track-info">트랙 소개 <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">학과별 트랙</a>
+                    <a class="nav-link" href="./major-track">학과별 트랙</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./recommend">과목 트랙 추천</a>
@@ -54,6 +54,7 @@
             </ul>
         </div>
     </nav>
+
     <img id="main" src="{{ url_for('static', filename='main.png') }}" class="img-fluid" alt="Responsive image"
     style="width: 100%">
 
