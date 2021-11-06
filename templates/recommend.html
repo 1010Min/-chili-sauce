@@ -37,32 +37,6 @@
 
 <body>
 <script src="../static/checkbox.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        showReview();
-    });
-    function showReview() {
-        $.ajax({
-            type: "GET",
-            url: "/review",
-            data: {},
-            success: function (response) {
-                let reviews=response['all_reviews']
-                for(let i=0;i<reviews.length;i++){
-                    let keyword_raw = reviews[i]['keyword']
-                    for(let j=0;j<keyword_raw.length;j++){
-                        let keyword=keyword_raw[j]
-                        let temp_html= `<input type='checkbox'
-                        name='animal'
-                        value=${keyword}
-                        onclick='getCheckboxValue()'/> ${keyword}`
-                        $('#reviews-box').append(temp_html)
-                    }
-                }
-            }
-        })
-    }
-</script>
 <nav id="nav" class="navbar navbar-expand-lg navbar-dark navbar-default">
     <a class="navbar-brand" href="./">
         <img id="logo" src="../static/logo.png" alt="">
