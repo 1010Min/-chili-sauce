@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <!-- google web font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- favicon   -->
+    <link rel="shortcut icon" href="../static/favicon.ico">
+    <title>sookmyung-track</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+
+<body>
+<nav id="nav" class="navbar navbar-expand-lg navbar-dark navbar-default">
+    <a class="navbar-brand" href="./">
+        <img id="logo" src="../static/logo.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="./track-info">트랙 소개 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./major-track">학과별 트랙</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./recommend">과목 트랙 추천</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="main">
+    <h4>SMT</h4>
+    <h5>트랙기반 전공교육과정</h5>
+    <h5>모듈과 트랙 개념을 대학 교육과정에 전면 도입함으로써 학문의 벽을 허물고, 교육역
+        량을 공유하는 진정한 의미의 융·복합 교육을 시행할 수 있는 교육인프라 구축
+    </h5>
+    <img id="main2" src="{{ url_for('static', filename='track_info.png') }}" class="img-fluid">
+    <h4>트랙 소개</h4>
+    <h5>(단일전공트랙)
+        진출분야 및 역량강화 위해 주전공의 모듈과 교과목으로 설계한 전공트랙
+        Ÿ 편성 : 1개 이상의 모듈 포함, 트랙기준학점 18~30학점 이내
+        - (융합전공트랙)
+        융·복합 교육 시행 위해 주전공 및 타전공의 모듈과 교과목으로 설계한 전공트랙
+        Ÿ 편성 : 2개 이상의 전공 참여, 1개 이상의 모듈 포함, 트랙기준학점 18학점
+        - (산학연계트랙)
+        산업수요 및 취업 유망분야에 대응하기 위해 주전공의 모듈과 교과목으로 설계한
+        전공트랙</h5>
+</div>
+
+<div class="footer">
+    Copyright ⓒchilli sauce. All Rights Reserved.
+    <br>
+    <br>Contact : chlthr1222@sookmyung.ac.kr / sw18@sookmyung.ac.kr
+</div>
+</body>
+
+</html>
