@@ -16,7 +16,7 @@ function showReview() {
                         name='animal'
                         value=${keyword}
                         onclick='getCheckboxValue()'/> ${keyword}`
-                    $('#reviews-box').append(temp_html)
+                        $('#reviews-box').append(temp_html)
                 }
             }
         }

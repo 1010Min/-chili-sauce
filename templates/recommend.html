@@ -63,32 +63,27 @@
 </div>
 <div class="card">
     <div class="card-body">
-      선택된 것들 목록
-      <button onclick='getCheckboxValue()' class="btn float-right"><img src="../static/dotbogi.png" style="width:25px; height:25px;" alt=""></button>
+        <div id='result'></div>
+        <button id='target_btn' onclick="CalCheckboxValue()" class="btn float-right"><img src="../static/dotbogi.png" style="width:25px; height:25px;" alt=""></button>
     </div>
   </div>
-
+  <div class="card">
+    <div class="card-body">
+        <div id="reviews-box"></div>
+        </div></div>
   <div class="main">
-    <h4 style="margin-top: 30px; margin-left: 30px;">키워드 기반으로 추천된 결과입니다.</h4>
-    <div class="row">
+    <h4>키워드 기반으로 추천된 결과입니다.</h4>
+    <div id="first" class="card"><div id='result2' style="color: white;"></div>
+    <!-- <div class="row">
         <div class="col">
             <div id="first" class="card">
                 <div class="card-body">
-                    <p id="sm-inside"class="card-title">추천된거 1</p>
+                    <p id="sm-inside"class="card-title"><div id='result2' style="color: white;"></div></p>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
-
-<div id="reviews-box"></div>
-<div id='result'></div>
-<button id='target_btn'onclick="CalCheckboxValue()">click</button>
-<div id='result2'></div>
-
-
-
-
 
 <div class="footer">
     Copyright ⓒchilli sauce. All Rights Reserved.
