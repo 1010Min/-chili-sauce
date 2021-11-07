@@ -63,26 +63,29 @@
         </ul>
     </div>
 </nav>
-<img id="main" src="{{ url_for('static', filename='recommend.png') }}" class="img-fluid" alt="Responsive image"
+<img id="main" src="{{ url_for('static', filename='major_track.png') }}" class="img-fluid" alt="Responsive image"
      style="width: 100%">
 <div class="main">
     <h4 style="margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
-        키워드 기반 트랙 추천
+        <span style="margin-bottom: 30px; float: left">키워드 기반 트랙 추천</span>
         <button type="button" class="btn btn-outline-dark float-right"
-                onclick="location.href='/recommend'" class="btn float-right" style="margin-right: 30px;">
+                onclick="location.href='/recommend'" class="btn float-right"
+                style="margin-right: 30px; margin-bottom: 30px">
             결과 새로고침 🔃
         </button>
     </h4>
-    
 </div>
+    <br><br>
 <div class="card">
     <div class="card-body">
-        <h4 style="margin-top: -30px; margin-bottom: 20px">자신이 선호하는 키워드를 선택해주세요.</h4>
+        <h4 style="margin-top: 30px; margin-bottom: 20px">자신이 선호하는 키워드를 선택해주세요.</h4>
         <p style="margin-bottom: 60px">아래의 트랙별 키워드에서 선호하는 키워드의 체크박스를 클릭한 후 추천 받기 버튼을 눌러 결과를 확인해주세요.</p>
         <div id='result'></div>
-        <button type="button" class="btn btn-outline-dark float-right" id='target_btn' onclick="CalCheckboxValue()" class="btn float-right">추천 받기🔍</button>
+        <button type="button" class="btn btn-outline-dark float-right" id='target_btn'
+                onclick="CalCheckboxValue()" class="btn float-right">추천 받기🔍</button>
     </div>
   </div>
+    <br>
   <div class="card">
     <div class="card-body">
         <div id="reviews-box">
