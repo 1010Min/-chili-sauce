@@ -2,7 +2,8 @@
 ![001](https://user-images.githubusercontent.com/60427387/140635410-f3200858-a84d-44a0-8603-73f8677954af.png)
 
 > SMT Recommendation은 숙명인을 위한 학과 트랙 추천 서비스입니다.    
-[홈페이지 방문하기🚶🏻‍♀️](http://sm-track.site/)
+[홈페이지 방문하기🚶🏻‍♀️](http://sm-track.site/)     
+‼ 위 링크로 접속이 안 될 경우 https가 아닌 http로 접속해주시면 됩니다☺️
 
 ---
 
