@@ -32,6 +32,7 @@
     <title>sookmyung-track</title>
     <link rel="stylesheet" href="../static/index.css">
 
+    <style>.keyyy{margin: 4px}</style>
 
 </head>
 
@@ -63,6 +64,7 @@
 </div>
 <div class="card">
     <div class="card-body">
+        <h4>키워드를 선택해주세요.</h4>
         <div id='result'></div>
         <button id='target_btn' onclick="CalCheckboxValue()" class="btn float-right"><img src="../static/dotbogi.png" style="width:25px; height:25px;" alt=""></button>
     </div>
@@ -72,8 +74,11 @@
         <div id="reviews-box"></div>
         </div></div>
   <div class="main">
-    <h4>키워드 기반으로 추천된 결과입니다.</h4>
-    <div id="first" class="card"><div id='result2' style="color: white;"></div>
+    <h5 style="margin-top: 30px; margin-left: 30px; margin-bottom: 30px">키워드 기반으로 추천된 결과입니다.</h5>
+    </div>
+    <div class="card" style="background-color: #0d2f87;">
+        <div class="card-body"><div id='result2' style="color: white;"></div></div>
+    </div>
     <!-- <div class="row">
         <div class="col">
             <div id="first" class="card">
@@ -83,7 +88,6 @@
             </div>
         </div>
     </div> -->
-</div>
 
 <div class="footer">
     Copyright ⓒchilli sauce. All Rights Reserved.
