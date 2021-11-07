@@ -15,7 +15,7 @@ function showReview() {
                     let temp_html= `<input type='checkbox'
                         name='animal'
                         value=${keyword}
-                        onclick='getCheckboxValue()'/> ${keyword}`
+                        onclick='getCheckboxValue()' class='keyyy'/> ${keyword}`
                         $('#reviews-box').append(temp_html)
                 }
             }
