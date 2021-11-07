@@ -113,31 +113,33 @@ function CalCheckboxValue(){
                 }
                 console.log("max "+max1+" "+index)
             }
-        let ans=" ";
-        if(index===0){ans="데이터사이언스 트랙"}
-        if(index===1){ans="미디어인터페이스 트랙"}
+        let ans=" "; let hakgwa=" "; let dangwa=" ";
+        if(index===0){ans="데이터사이언스 트랙"; hakgwa ="소프트웨어융합전공"; dangwa="공과대학"}
+        if(index===1){ans="미디어인터페이스 트랙"; hakgwa ="소프트웨어융합전공"; dangwa="공과대학"}
 
-        if(index===2){ans="인공지능 트랙"}
-        if(index===3){ans="클라우드 트랙"}
-        if(index===4){ans="전문개발자양성 트랙"}
+        if(index===2){ans="인공지능 트랙"; hakgwa ="컴퓨터과학전공"; dangwa="공과대학"}
+        if(index===3){ans="클라우드 트랙"; hakgwa ="컴퓨터과학전공"; dangwa="공과대학"}
+        if(index===4){ans="전문개발자양성 트랙"; hakgwa ="컴퓨터과학전공"; dangwa="공과대학"}
 
-        if(index===5){ans="스마트IoT솔루션 트랙"}
-        if(index===6){ans="빅데이터분석 트랙"}
-        if(index===7){ans="AI감성컴퓨팅 트랙"}
-        if(index===8){ans="커넥티드/IoT 트랙"}
-        if(index===9){ans="인공지능/자율주행 트랙"}
-        if(index===10){ans="스마트센서/진단 트랙"}
-        if(index===11){ans="그린에너지/소재 트랙"}
+        if(index===5){ans="스마트IoT솔루션 트랙"; hakgwa ="IT공학전공"; dangwa="공과대학"}
+        if(index===6){ans="빅데이터분석 트랙"; hakgwa ="IT공학전공"; dangwa="공과대학"}
+        if(index===7){ans="AI감성컴퓨팅 트랙"; hakgwa ="IT공학전공"; dangwa="공과대학"}
+        if(index===8){ans="커넥티드/IoT 트랙"; hakgwa ="IT공학전공"; dangwa="공과대학"}
+        if(index===9){ans="인공지능/자율주행 트랙"; hakgwa ="IT공학전공"; dangwa="공과대학"}
+        if(index===10){ans="스마트센서/진단 트랙"; hakgwa ="IT공학전공"; dangwa="공과대학"}
+        if(index===11){ans="그린에너지/소재 트랙"; hakgwa ="IT공학전공"; dangwa="공과대학"}
 
-        if(index===12){ans="글로벌경영 트랙"}
-        if(index===13){ans="마케팅전략 트랙"}
-        if(index===14){ans="과학적경영 트랙"}
-        if(index===15){ans="인사조직 트랙"}
-        if(index===16){ans="통합재무분석 트랙"}
-        if(index===17){ans="회계정보분석및관리 트랙"}
-        if(index===18){ans="경영분석 트랙"}
+        if(index===12){ans="글로벌경영 트랙"; hakgwa ="경영학부"; dangwa="상경대학"}
+        if(index===13){ans="마케팅전략 트랙"; hakgwa ="경영학부"; dangwa="상경대학"}
+        if(index===14){ans="과학적경영 트랙"; hakgwa ="경영학부"; dangwa="상경대학"}
+        if(index===15){ans="인사조직 트랙"; hakgwa ="경영학부"; dangwa="상경대학"}
+        if(index===16){ans="통합재무분석 트랙"; hakgwa ="경영학부"; dangwa="상경대학"}
+        if(index===17){ans="회계정보분석및관리 트랙"; hakgwa ="경영학부"; dangwa="상경대학"}
+        if(index===18){ans="경영분석 트랙"; hakgwa ="경영학부"; dangwa="상경대학"}
 
         document.getElementById('result2').innerText = ans;
+        document.getElementById('result2_1').innerText = hakgwa;
+        document.getElementById('result2_2').innerText = dangwa;
         const target = document.getElementById('target_btn');
         target.disabled = true;
 }

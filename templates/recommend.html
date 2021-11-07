@@ -62,7 +62,10 @@
 <div class="main">
     <h4 style="margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
         키워드 기반 트랙 추천
-        </h4>
+        <button onclick="location.href='./recommend'" class="btn float-right" style="margin-right: 30px;">
+            <img src="../static/restart.png" style="width:25px; height:25px;" alt="">
+        </button>
+    </h4>
     
 </div>
 <div class="card">
@@ -80,7 +83,11 @@
     <h5 style="margin-top: 30px; margin-left: 30px; margin-bottom: 30px">키워드 기반으로 추천된 결과입니다.</h5>
     </div>
     <div class="card" style="background-color: #0d2f87;">
-        <div class="card-body"><div id='result2' style="color: white;"></div></div>
+        <div class="card-body">
+            <h3 id='result2' style="color: white;"></h3>
+            <span id='result2_2' style="color: white;"></span>
+            <span id='result2_1' style="color: white;"></span>
+        </div>
     </div>
     <!-- <div class="row">
         <div class="col">
